@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Igra memorije</title>
+
+</head>
+
+<body>
+
+    <!-- Sekcija koja otvara pozdravni prozor -->
+
+    <h2 class="naslov_index">Igra memorije</h2>
+
+    <div class="opis">
+        <p></p>
+        <ul style="list-style-type: square">
+            <li>U igri memorije, igrač treba da upari <span>dve iste kartice</span>.</li>
+            <li><span>U jednom potezu</span> možete da otvorite tačno dve kartice.</li>
+            <li>Ukoliko su kartice <span>iste</span>, ostaju otvorene na ekranu.</li>
+            <li><span>Različite</span> kartice se ponovo sakrivaju.</li>
+            <li>Igra se završava kada <span>svi parovi kartica</span> budu otkriveni.</li>
+            <li>Registruje se ukupan broj poteza i vreme za koje je završen zadatak.</li>
+        </ul>
+
+        <!-- Sekcija u kojoj se bira veličina table i broj kartica -->
+
+        <form class="form">
+            <legend>Odaberite veličinu table:</legend>
+
+            <input type="radio" name="tabla" id="12" value="12" checked> 12 kartica
+            <br>
+            <input type="radio" name="tabla" id="18" value="18"> 18 kartica
+            <br>
+            <input type="radio" name="tabla" id="24" value="24"> 24 kartice
+            <br>
+            <input type="radio" name="tabla" id="30" value="30"> 30 kartica
+            <br>
+            <input class="dugme" type="submit" value="Kliknite za početak">
+        </form>
+    </div>
+
+    <!-- Sekcija u kojoj je igra -->
+
+    <p class="potez">Broj poteza: <span class="broj_poteza">0</span> </p>
+
+    <h2 class="naslov_igra">Igra memorije</h2>
+
+    <p class="timer">Vreme: <span class="min"> 00 </span> min <span class="sek"> 00 </span> sec</p>
+
+    <div class="igra">
+
+    </div>
+
+    <!-- Sekcija koja otvara prozor sa obaveštenjem o uspešnom završetku igre -->
+
+    <div class="uspesno">
+
+        <h1 style="color: lightseagreen; font-family: Anton; font-weight: bold; font-size: 60px">ČESTITAMO !</h1>
+
+        <p>Uspešno ste otvorili sve karte.</p>
+
+        <p class="vreme">Vreme potrebno za završetak igre je: <span class="minut"> 00 </span> min <span class="sekund"> 00 </span> sec</p>
+
+        <p>Broj pokušaja je: <span class="pokusaj">0</span></p>
+
+        <a class="dugme" href="./index.html">NOVA IGRA ?</a>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+<footer>
+    <p>Svi logoi su vlasništvo njihovih respektivnih vlasnika, i korišćeni su isključivo za potrebe učenja.</p>
+</footer>
+
+</html>
